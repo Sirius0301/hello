@@ -2,12 +2,17 @@
 
 ## **30 Days of JavaScript - 完整基础重建计划**
 
+### 资源
+
+- [MDN]{https://developer.mozilla.org/en-US/docs/Web/JavaScript}
+- [LeetCode]{https://leetcode.com/studyplan/30-days-of-javascript/}
+
 ### 详细计划
 
 | 时间       | 天数 | 完成状态 |
 | ---------- | ---- | -------- |
-| 2026-01-15 | 1    | ✅        |
-| 2026-01-16 | 2    |          |
+| 2026-01-15 | 1    | ✅       |
+| 2026-01-16 | 2    | ✅       |
 | 2026-01-17 | 3    |          |
 | 2026-01-18 | 4    |          |
 | 2026-01-19 | 5    |          |
