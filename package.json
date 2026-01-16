@@ -2,6 +2,20 @@
     "name": "hello-monorepo",
     "private": true,
     "workspaces": [
-        "30_days_of_javascript"
-    ]
+        "apps/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "dev": "turbo dev",
+        "build": "turbo build",
+        "lint": "turbo lint",
+        "test": "turbo test"
+    },
+    "dependencies": {
+        "pnpm": "^10.28.0"
+    },
+    "devDependencies": {
+        "turbo": "^2.7.4",
+        "typescript": "^5.9.3"
+    }
 }
