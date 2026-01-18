@@ -175,19 +175,51 @@ d.getDay(); // 5 （0=周日，6=周六）
 d.getHours(); // 
 ```
 
-1.  regular expressions
-2.  Indexed collections
-3.  Keyed collections
-4.  Working with Objects
-5.  Using classes
-6.  Using promises
-7.  JavaScript typed arrays
-8.  Iterators and generators
-9.  Resource Management
+## What's my plan for tomorrow?
+
+1. regular expressions
+2. Indexed collections
+3. Keyed collections
+4. Working with Objects
+5. Using classes
+6. Using promises
+7. JavaScript typed arrays
+8. Iterators and generators
+9. Resource Management
 10. Internationalization
 11. JavaScript Modules
 
 
-## What's my plan for tomorrow?
-
 ## Are there any questions?
+
+修改日期方法
+1. `setHours`
+```javascript
+const d = new Date();
+d.setHours(23); // (0--23)
+d.setMinutes(59); 
+d.setSeconds(30); 
+d.setMilliseconds(500)
+// 可链式调用
+d.setHours(23, 59, 30, 500)
+```
+2. `setTime()`
+```javaScript
+const d = new Date();
+d.setTime(1737023400000);
+```
+3. 日期运算（加减天数）
+```javaScript
+const d = new Date();
+d.setDate(d.getDate() + 1);
+d.setHours(d.getHours() + 1);
+d.setDate(d.getDate() - 7);
+```
+
+4. `dayjs`库
+```javaScript
+const dayjs = require('dayjs');
+
+dayjs().add(1, 'day').format('YYYY-MM-DD');
+dayjs().subtract(7, 'hour').format('HH:mm');
+```
